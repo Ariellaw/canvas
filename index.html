@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Canvas Project</title>
+</head>
+
+<body onload="init()">
+    <header>Canvas Playground</header>
+    <nav class="container">
+            <div class="user-color">
+                    <label>
+                        Color:
+                        <input id="color" type="color" name="color" value="#ffffff" onchange="onChangeColor(this)" />
+                    </label>
+                </div>
+        <select class="select-menu select-shape" onchange="onChangeShape()">
+            <option value="square">Square</option>
+            <option value="circle">Cirlce</option>
+            <option value="line">line</option>
+        </select>
+      
+       
+        <div >
+            <button class="clear-btn" onclick="onClearClicked()">Clear</button>
+        </div>
+    </nav>
+    <canvas id='canvas' onmousedown="handleMouseDown()" onmouseup="handleMouseUp()"></canvas>
+    <script src="js/canvas-service.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

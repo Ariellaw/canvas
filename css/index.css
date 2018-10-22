@@ -1,0 +1,47 @@
+/* BASE */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+/* HEADER */
+header{
+    color: #00ff80;
+    background-color: #0040ff;
+    font-size: 5rem;
+    text-align: center;
+}
+/* NAV */
+
+nav{
+    display: flex;
+    background: #00ff80;
+    justify-content: center;
+    /* color: white; */
+}
+nav > *{
+    margin: 5px 15px;
+}
+.clear-btn{
+    font-size: 1.1rem;
+    background: #00cc00;
+    border-radius: 5px;
+    color: white;
+}
+.select-menu{
+    font-family: inherit;
+}
+/* for canvas */
+canvas{
+    background-color: black;
+    border: 1px solid black;
+}
